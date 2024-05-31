@@ -59,7 +59,7 @@ try:
      cprint("No GPS Location found in image. Try with another image.", "red")
 except Expection as e:
     cprint(f"An error occured: {e}", "red")
-msg = int(input("Do you want to Resize Image?\n1. Yes\n2. No\n")
+msg = int(input("Do you want to Resize Image?\n1. Yes\n2. No\n"))
 if msg == 1:
     if os.path.exists(imagename):
     try:
