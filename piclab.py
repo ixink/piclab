@@ -86,6 +86,6 @@ if msg == 1:
         except Exception as e:
            cprint(f"Error processing the image: {e}", "red")
 elif:
-    cprint("Thanks for using piclab", "green")
+     cprint("Thanks for using piclab", "green")
 else:
-    cprint("Wrong input. Input 1 or 2.", "red")
+     cprint("Wrong input. Input 1 or 2.", "red")
