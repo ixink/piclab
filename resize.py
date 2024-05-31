@@ -1,8 +1,12 @@
-rom PIL import Image
+from PIL import Image
 import piexif
 from PIL.ExifTags import TAGS
 import os
 from termcolor import colored, cprint
+print('''        ______________________________________________
+                          coded by:ixink(Rayhan Ahmed)
+           contact me:linkedin.com/in/rayhan-ahmed-uiu ''')
+
 col = colored("Enter the path to the image file: ", "black", "on_blue")
 imagename = input(col)
 
