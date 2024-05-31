@@ -3,16 +3,18 @@ import piexif
 from PIL.ExifTags import TAGS
 import os
 from termcolor import colored, cprint
-cprint('''
+
+print('''
 ____  _        _          _    
 |  _ \(_) ___  | |    __ _| |__  
 | |_) | |/ __| | |   / _` | '_ \
 |  __/| | (__  | |__| (_| | |_) |
 |_|   |_|\___| |_____\__,_|_.__/ 
+
 ______________________________________________
                 coded by:ixink(Rayhan Ahmed)
 contact me:linkedin.com/in/rayhan-ahmed-uiu
-''', "green")
+''')
 col = colored("Enter the path to the image file: ", "black", "on_blue")
 imagename = input(col)
 
