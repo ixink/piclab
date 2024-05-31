@@ -12,7 +12,7 @@ ____  _        _          _
 ______________________________________________
                 coded by:ixink(Rayhan Ahmed)
 contact me:linkedin.com/in/rayhan-ahmed-uiu
-''', "greeen")
+''', "green")
 col = colored("Enter the path to the image file: ", "black", "on_blue")
 imagename = input(col)
 
