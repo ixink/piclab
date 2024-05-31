@@ -62,33 +62,30 @@ except Expection as e:
 msg = int(input("Do you want to Resize Image?\n1. Yes\n2. No\n"))
 if msg == 1:
     if os.path.exists(imagename):
-    try:
-        with image as im:
-            cprint(f"Original Image Size: {im.size}", "blue")
         try:
-            new_width =int(input("Enter the new width (in pixels): "))
-            new_height = int(input("Enter the new height (in pixels): "))
-        except ValueError:
-            cprint("Invalid input. Please Enter valid integer value.", "red")
-            exit()
+            with image as im:
+                cprint(f"Original Image Size: {im.size}", "blue")
+            try:
+                new_width =int(input("Enter the new width (in pixels): "))
+                new_height = int(input("Enter the new height (in pixels): "))
+            except ValueError:
+                cprint("Invalid input. Please Enter valid integer value.", "red")
+                exit()
 
-        resized_image = im.resize((new_width, new_height))
-        resized_image.show()
-        message =int(input("Do you want to save?\n1. Yes\n2. No\n"))
-        if message == 1:
-                  output_path = input("Enter the path to save resized image: ")
-                  resized_image.save(output_path)
-                  cprint(f"Image Saved at {output_path}", "green")
-        elif message == 2:
-                    cprint("Thank you for using", "green")
-        else:
-            cprint("Wrong input. Please input 1 or 2 for select option.", "red")
-    except Exception as e:
-       cprint(f"Error processing the image: {e}", "red")
+            resized_image = im.resize((new_width, new_height))
+            resized_image.show()
+            message =int(input("Do you want to save?\n1. Yes\n2. No\n"))
+            if message == 1:
+                      output_path = input("Enter the path to save resized image: ")
+                      resized_image.save(output_path)
+                      cprint(f"Image Saved at {output_path}", "green")
+            elif message == 2:
+                        cprint("Thank you for using", "green")
+            else:
+                cprint("Wrong input. Please input 1 or 2 for select option.", "red")
+        except Exception as e:
+           cprint(f"Error processing the image: {e}", "red")
 elif:
     cprint("Thanks for using piclab", "green")
 else:
-    print("Wrong input. Input 1 or 2.", "red")
-          
-          
-
+    cprint("Wrong input. Input 1 or 2.", "red")
