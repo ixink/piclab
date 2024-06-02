@@ -9,6 +9,11 @@ Requirements
   git
   
       sudo apt install git
+      
+  subprocess
+
+      pip3 install subprocess
+      
 Installation
 
       sudo git clone http://github.com/ixink/piclab
